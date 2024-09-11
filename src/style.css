@@ -1,0 +1,104 @@
+body{
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+   /* background-color: black; */
+} 
+
+#card:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease ;
+ background-color: rgba(82, 66, 56, 0.635);
+ color:white;
+  
+}
+
+#shop:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease ;
+
+}
+
+#About:hover{
+  transform: rotate(360deg);
+  transition: 1s ease-in-out;
+
+}
+
+#shop:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease ;
+
+}
+#card-image:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+ 
+}
+
+
+/* #image:hover {
+  filter: blur(100px);
+  opacity: 10;
+
+} */
+
+/* src/FeatureItem.css */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+
+.card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(15, 28, 63);
+  
+  font-size: 40px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(0);
+  transition: filter 0.3s ease;
+  z-index: 1;
+}
+
+.image-container:hover::before {
+  filter: blur(5px);
+}
+
+.image-container:hover .card-text {
+  opacity: 1;
+  align-items: center;
+  
+}
+.image-container:hover .card-image{
+ 
+  filter: blur(2px);
+}
+
